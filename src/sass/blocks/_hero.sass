@@ -1,6 +1,10 @@
 .hero
   background-color: $hero-color
   padding: 50px 0
+  &-image
+    box-shadow: 10px 10px 30px rgba(154, 147, 140, 0.5)
+    img
+      max-width: 100%
   &-block
     display: flex
   &-text
@@ -46,8 +50,6 @@
       padding-right: 10px
 @media (max-width: 768px)
   .hero
-    &-image
-      max-width: 100%;
     &-text
       &__title
         font-size: 24px
