@@ -229,4 +229,26 @@ img {
     margin-right: 15px;
   }
 }
+
+@media (max-width: 360px) {
+  .navbar-block {
+    max-width: 320px;
+  }
+  .navbar img {
+    max-width: 85px;
+  }
+  .navbar__button {
+    font-size: 12px;
+    padding: 15px 25px;
+  }
+  .hero-text__subtitle {
+    max-width: 200px;
+  }
+  .hero-list__text {
+    max-width: 185px;
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: -0.5px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
