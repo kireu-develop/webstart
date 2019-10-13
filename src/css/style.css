@@ -508,11 +508,21 @@ img {
 }
 
 .modal-dialog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: relative;
   margin: auto;
-  max-width: 240px;
+  max-width: 570px;
+  min-height: 640px;
   width: 90%;
-  min-width: 200px;
   background-color: #fff;
   padding: 40px;
 }
@@ -521,5 +531,73 @@ img {
   position: absolute;
   top: 0;
   right: 0;
+}
+
+.modal-dialog__title {
+  text-align: center;
+  font-size: 22px;
+  line-height: 33px;
+  max-width: 290px;
+  margin-bottom: 35px;
+}
+
+.modal-dialog__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 35px;
+  margin-bottom: 20px;
+}
+
+.modal-dialog__input {
+  min-width: 370px;
+}
+
+.modal-dialog__input:first-child {
+  margin-bottom: 15px;
+}
+
+.modal-dialog__button {
+  margin-top: 30px;
+  margin-bottom: 10px;
+  min-width: 370px;
+  height: 70px;
+}
+
+.modal-dialog__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 290px;
+  text-align: center;
+}
+
+.modal-dialog__text {
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.modal-dialog__phone {
+  margin-top: 10px;
+  font-size: 24px;
+  line-height: 24px;
+  text-decoration: none;
+  color: #333333;
+  font-family: 'Museo Sans Bold' ,sans-serif;
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
