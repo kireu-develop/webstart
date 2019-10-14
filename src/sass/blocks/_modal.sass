@@ -15,7 +15,7 @@
     position: relative
     margin: auto
     max-width: 570px
-    min-height: 640px
+    min-height: 674px
     width: 90%
     background-color: #fff
     padding: 40px
@@ -27,8 +27,14 @@
       text-align: center
       font-size: 22px
       line-height: 33px;
-      max-width: 290px
-      margin-bottom: 35px
+      max-width: 300px
+      margin-left: 9px
+      margin-top: 32px
+      margin-bottom: 45px
+      +bold
+    &__subtitle
+      margin-left: 9px
+      margin-bottom: 13px
     &__form
       display: flex
       flex-direction: column
@@ -40,9 +46,10 @@
       &:first-child
         margin-bottom: 15px
     &__button
-      margin-top: 30px
+      margin-top: 28px
       margin-bottom: 10px
-      min-width: 370px
+      margin-left: 3px
+      min-width: 367px
       height: 70px
     &__info
       display: flex
@@ -53,6 +60,7 @@
     &__text
       font-size: 15px
       line-height: 20px
+      margin-right: 4px
     &__phone
       margin-top: 10px
       font-size: 24px
@@ -60,3 +68,37 @@
       text-decoration: none
       color: $text-color
       +bold
+@media (max-width: 360px)
+  .modal
+    &-dialog
+      max-width: 330px
+      min-height: 300px
+      margin-top: 20px
+      &__title
+        font-size: 18px
+        line-height: 22px
+        width: 250px
+        margin-bottom: 20px
+        +bold
+      &__subtitle
+        font-size: 14px
+        text-align: center
+        width: 160px
+      &__form
+        margin-top: 20px
+      &__input
+        min-width: 250px
+        font-size: 12px
+        padding: 20px
+      &__button
+        min-width: 250px
+        margin-left: -3px
+        height: 60px
+        font-size: 14px
+      &__info
+        display: flex
+        flex-wrap: wrap
+      &__text
+        font-size: 12px
+      &__phone
+        font-size: 16px
