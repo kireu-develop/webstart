@@ -732,7 +732,7 @@ img {
   font-weight: 700;
 }
 
-@media (max-width: 360px) {
+@media (max-width: 991px) {
   .modal-dialog {
     max-width: 330px;
     min-height: 300px;
